@@ -1,5 +1,6 @@
 # Royal Cyber Lab
 
+> **Educational / demo use only:** Review code before running it. Use only on files, devices, repositories, and networks you own or are explicitly authorized to access. Use at your own risk; no warranty is provided to the maximum extent permitted by applicable law. This notice does not waive non-waivable legal rights or obligations.\n
 A practical Kali Linux cybersecurity learning lab focused on Linux fundamentals, authorized lab exercises, network concepts, defensive analysis, and safe system hardening.
 
 > **Read first:** [Legal, Safety and Responsibility Notice](docs/LEGAL_AND_SAFETY.md). “Educational purpose” or “at your own risk” is not authorization to access or test another person's systems. Use only your own systems or targets covered by explicit permission.
@@ -39,7 +40,3 @@ GitHub Actions validates required files, Python syntax, Bash syntax, and the syn
 
 ## License
 MIT. See [LICENSE](LICENSE).
-
-## Educational use, safety and responsibility
-
-This repository is provided for educational, demonstration, and informational purposes. Review code and commands before use. Use it only with files, devices, repositories, and networks you own or are explicitly authorized to access. You are responsible for keeping backups, protecting personal information, and following applicable laws and policies. Use is at your own risk. The project is provided “as is” without warranties, to the maximum extent permitted by applicable law. Nothing in this notice excludes liability, rights, or obligations that cannot legally be excluded. This notice does not grant permission to access or test third-party systems.
