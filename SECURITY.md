@@ -11,3 +11,6 @@ Do not publish exploit details, credentials, personal data, or weaponized proof-
 - Keep practice targets isolated and disposable.
 - Do not upload real logs containing usernames, IP addresses, tokens, or other personal information.
 - Stop immediately if an exercise reaches an unintended system.
+## User responsibility and warranty notice
+
+Use this project only for lawful learning and on resources you own or are explicitly authorized to use. Review all code and commands before running them, keep independent backups, and protect private data. Use is at your own risk. The project is supplied “as is” without warranties, to the maximum extent permitted by applicable law. Nothing here excludes non-waivable rights, liabilities, or obligations. An educational-purpose notice is not permission to access or test third-party systems.
