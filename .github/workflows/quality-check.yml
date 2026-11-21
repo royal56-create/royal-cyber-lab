@@ -21,8 +21,12 @@ jobs:
       - name: Check project structure
         run: python tests/check_project.py
       - name: Compile Python scripts
-        run: python -m py_compile scripts/analyze_sample_logs.py tests/check_project.py
+        run: python -m py_compile scripts/analyze_sample_logs.py scripts/file_integrity.py tests/check_project.py
       - name: Check shell syntax
         run: bash -n scripts/system_audit.sh scripts/network_snapshot.sh
       - name: Run synthetic log demo
         run: python scripts/analyze_sample_logs.py samples/auth_sample.log
+      - name: Smoke-test file integrity utility
+        run: |
+          printf 'test data\n' > /tmp/royal-cyber-lab-test.txt
+          python scripts/file_integrity.py /tmp/royal-cyber-lab-test.txt
