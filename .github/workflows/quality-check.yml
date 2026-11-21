@@ -1,0 +1,28 @@
+name: Quality Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check project structure
+        run: python tests/check_project.py
+      - name: Compile Python scripts
+        run: python -m py_compile scripts/analyze_sample_logs.py tests/check_project.py
+      - name: Check shell syntax
+        run: bash -n scripts/system_audit.sh scripts/network_snapshot.sh
+      - name: Run synthetic log demo
+        run: python scripts/analyze_sample_logs.py samples/auth_sample.log
