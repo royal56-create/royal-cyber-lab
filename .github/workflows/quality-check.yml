@@ -11,14 +11,18 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Check project structure
+          python-version: ${{ matrix.python-version }}
+      - name: Check project structure and safety notices
         run: python tests/check_project.py
       - name: Compile Python scripts
         run: python -m py_compile scripts/analyze_sample_logs.py scripts/file_integrity.py tests/check_project.py
