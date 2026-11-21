@@ -1,0 +1,6 @@
+# Fictional training data only; these are not real users or events.
+2026-01-01T10:00:00Z FAILED user=learner source=192.0.2.10
+2026-01-01T10:00:04Z FAILED user=learner source=192.0.2.10
+2026-01-01T10:01:00Z SUCCESS user=demo source=192.0.2.20
+2026-01-01T10:02:00Z FAILED user=guest source=198.51.100.7
+2026-01-01T10:03:00Z SUCCESS user=learner source=192.0.2.10
