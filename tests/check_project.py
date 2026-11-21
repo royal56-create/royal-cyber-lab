@@ -8,11 +8,14 @@ REQUIRED = [
     "docs/LEGAL_AND_SAFETY.md", "docs/GETTING_STARTED.md",
     "docs/KALI_SETUP.md", "docs/LINUX_COMMANDS.md", "docs/NETWORKING.md",
     "docs/DEFENSIVE_SECURITY.md", "docs/INCIDENT_RESPONSE.md",
-    "docs/LAB_RULES.md", "scripts/system_audit.sh",
+    "docs/LAB_RULES.md", "docs/SYSTEM_HARDENING.md", "docs/GLOSSARY.md",
+    "docs/LEARNING_ROADMAP.md", "scripts/system_audit.sh",
     "scripts/network_snapshot.sh", "scripts/analyze_sample_logs.py",
-    "samples/auth_sample.log", "labs/beginner/system-inventory.md",
+    "scripts/file_integrity.py", "samples/auth_sample.log",
+    "labs/beginner/system-inventory.md",
     "labs/beginner/local-network-snapshot.md",
     "labs/defensive/sample-log-review.md",
+    "labs/defensive/file-integrity-check.md",
 ]
 
 
