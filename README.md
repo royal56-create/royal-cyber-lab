@@ -10,6 +10,8 @@ A practical Kali Linux cybersecurity learning lab focused on Linux fundamentals,
 - Defensive security, log review, and incident response
 - System inventory and basic hardening
 - Synthetic, offline demonstrations
+- Web security fundamentals and local-only security-header review
+- Reusable security review report template
 
 ## Quick start
 ```bash
